@@ -7,56 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elara Bank</title>
 </head>
-<style>
-.personal{
-  position: relative;
-  height: 100vh;
-  background-image: url(mr.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-.personal::before{
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.50);
-  z-index: 0;
-  inset: 0;
-}
-.per-head{
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
-.per-head h2{
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.per-head p{
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-}
-@media (max-width: 768px) {
-    .personal h1 {
-        font-size: 2.5rem;
-    }
 
-    .personal p {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 12px 28px;
-        font-size: 1rem;
-    }
-}
-</style>
 <body>
   <header class="hero">
 
@@ -95,7 +46,7 @@
           <li class="submenu-item"><a href="risk.html">Risk & Return Info</a></li>
         </ul>
       </li>
-      
+     
       <li class="menu-item-drop"><a href="about.html" class="menu-link">About</a>
         <ul class="submenu">
           <li class="submenu-item"><a href="elara.html">About ELARA-Banking</a></li>
@@ -112,49 +63,32 @@
       </li>
     </ul>
   </div>
-  <section class="personal">
-    <div class="per-head">
-      <section class="investment-hero">
-  <div class="overlay">
-    <h1>Smart Investment for a Secure Future</h1>
-    <p>Discover tailored investment solutions that grow your wealth while securing tomorrow. Join us and invest with confidence.</p>
-  </div>
-</section>
+  <section class="account-section">
+  <h2>Merchant Payment</h2>
+  <p>Accept payments from your customers via POS, mobile, or QR scan easily and securely.</p>
+
+  <div class="benefits">
+    <div class="benefit-box">
+      <h4>POS Terminals</h4>
+      <p>Get modern POS machines for quick in-store payments.</p>
     </div>
-  </section>
-  <section class="bank-menu">
-  <h2>Our Investment Options</h2>
-  <p>Explore trusted and secure ways to grow your wealth with Elara Bank.</p>
-
-  <div class="bank-box">
-    
-    <a href="real.html" class="bank-info">
-      <img src="reali.jpg" alt="Real Estate Investment">
-      <h3>Real Estate</h3>
-      <p>Invest in property and land with expert-backed long-term returns.</p>
-    </a>
-
-    <a href="stock.html" class="bank-info">
-      <img src="bonds.jpg" alt="Stock and Bonds">
-      <h3>Stocks & Bonds</h3>
-      <p>Trade in trusted stock markets and government bonds for better profits.</p>
-    </a>
-
-    <a href="sav-plan.html" class="bank-info">
-      <img src="sx.jpg" alt="Saving Plans">
-      <h3>Saving Plans</h3>
-      <p>Save smartly for your goals with flexible plans and interest growth.</p>
-    </a>
-
-    <a href="risk.html" class="bank-info">
-      <img src="rikh.jpg" alt="Risk and Return">
-      <h3>Risk & Return</h3>
-      <p>Learn about risk levels and potential returns before you invest.</p>
-    </a>
-
+    <div class="benefit-box">
+      <h4>QR Payments</h4>
+      <p>Accept customer payments through QR code scanning.</p>
+    </div>
+    <div class="benefit-box">
+      <h4>Mobile Integration</h4>
+      <p>Connect with e-commerce or mobile payment platforms.</p>
+    </div>
+    <div class="benefit-box">
+      <h4>Instant Settlement</h4>
+      <p>Money credited to your account immediately after payment.</p>
+    </div>
   </div>
+
+  
 </section>
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-con">
       <div class="footer-col">
         <h3>Elara Bank</h3>
@@ -227,8 +161,6 @@
       <p>&copy;2025 ELARA BANK. All rights reserved</p>
     </div>
   </footer>
-
-
 </body>
 
 </html>

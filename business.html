@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elara Bank</title>
+</head>
+<style>
+.personal{
+  position: relative;
+  height: 100vh;
+  background-image: url(busin.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.personal::before{
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.50);
+  z-index: 0;
+  inset: 0;
+}
+.per-head{
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+.per-head h2{
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.per-head p{
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+    .personal h1 {
+        font-size: 2.5rem;
+    }
+
+    .personal p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+}
+</style>
+
+<body>
+  <header class="hero">
+
+    <h1><span style="color: blue;">E</span><span style="color: red;">L</span><span
+        style="color: rgb(182, 205, 50);">A</span><span style="color: skyblue;">R</span><span
+        style="color: red;">A</span> BANK</h1>
+
+    <label for="menu-toggle" class="hum">&#9776;</label>
+  </header>
+  <div class="nav">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" name="" id="">
+
+    <ul class="menu">
+      <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+      <li class="menu-item-drop"><a href="personal.html" class="menu-link">Personal Banking</a>
+        <ul class="submenu">
+          <li class="submenu-item"><a href="current.html">Current Account</a></li>
+          <li class="submenu-item"><a href="saving-acc.html">Savings Account</a></li>
+          <li class="submenu-item"><a href="card-acc.html">Card Account</a></li>
+          <li class="submenu-item"><a href="mobile-acc.html">Mobile Account</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-drop"><a href="business.html" class="menu-link">Business Banking</a>
+        <ul class="submenu">
+          <li class="submenu-item"><a href="SME-BUS.html">SME Account</a></li>
+          <li class="submenu-item"><a href="loans.html">Business Loans</a></li>
+          <li class="submenu-item"><a href="marchant.html">Marchent Payment</a></li>
+          <li class="submenu-item"><a href="payrol.html">Payroll Management</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-drop"><a href="investment.html" class="menu-link">Investment</a>
+        <ul class="submenu">
+          <li class="submenu-item"><a href="real.html">Real-state Investment</a></li>
+          <li class="submenu-item"><a href="stock.html">Stock/Band Options</a></li>
+          <li class="submenu-item"><a href="sav-plan.html">Saving Plans</a></li>
+          <li class="submenu-item"><a href="risk.html">Risk & Return Info</a></li>
+        </ul>
+      </li>
+    
+      <li class="menu-item-drop"><a href="about.html" class="menu-link">About</a>
+        <ul class="submenu">
+          <li class="submenu-item"><a href="elara.html">About ELARA-Banking</a></li>
+          <li class="submenu-item"><a href="vision.html">Vision & Mission</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-drop"><a href="help.html" class="menu-link">Help</a>
+        <ul class="submenu">
+          <li class="submenu-item"><a href="faqs.html">FAQS</a></li>
+          <li class="submenu-item"><a href="cont-form.html">Contact Form</a></li>
+          <li class="submenu-item"><a href="lost.html">Lost Card ? Report</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+   <section class="personal">
+    <div class="per-head">
+      <h2>Business Banking</h2>
+  <p>Empowering your business with flexible financial tools and trusted support.</p>
+
+     <a href="current.html" class="btn">View</a>
+  </div>
+  
+  </section>
+  <section class="bank-menu">
+    <div class="bank-box">
+      <a href="SME-BUS.html" class="bank-info">
+        <img src="loans.jpg" alt="">
+              <h3>SME Account</h3>
+      <p>Designed for small and medium enterprises to manage finances efficiently and professionally.</p>
+      </a>
+
+          <a href="loans.html" class="bank-info">
+        <img src="lonee.jpg" alt="">
+         <h3>Business Loans</h3>
+      <p>Access quick and affordable financing to grow and expand your operations.</p>
+      </a>
+
+          <a href="marchant.html" class="bank-info">
+        <img src="march.jpg" alt="">
+         <h3>Merchant Payments</h3>
+      <p>Accept digital payments easily and securely, both in-store and online.</p>
+      </a>
+
+          <a href="payrol.html" class="bank-info">
+        <img src="pay.jpg" alt="">
+        <h3>Payroll Management</h3>
+      <p>Streamline your employee salary disbursement with automated and reliable tools.</p>
+      </a>
+    </div>
+  </section>
+    <footer class="footer">
+    <div class="footer-con">
+      <div class="footer-col">
+        <h3>Elara Bank</h3>
+        <p>Your digital banking partner in Somalia and beyond.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="business.html">Business Banking</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="personal.html">Personal Banking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Business Banking</h3>
+        <ul>
+          <li><a href="SME-BUS.html">SME- Account</a></li>
+          <li><a href="loans.html">Business Loans</a></li>
+          <li><a href="payrol.html">Payroll Account</a></li>
+          <li><a href="marchant.html">Marchant Account</a></li>
+        </ul>
+      </div>
+        <div class="footer-col">
+        <h3>Personal Banking</h3>
+        <ul>
+          <li><a href="current.html">Current Account</a></li>
+          <li><a href="mobile-acc.html">Mobile Account</a></li>
+          <li><a href="saving-acc.html">Savings Account</a></li>
+          <li><a href="card-acc.html">Card Account</a></li>
+        </ul>
+      </div>
+        <div class="footer-col">
+        <h3>Investment</h3>
+        <ul>
+          <li><a href="real.html">Real-state Investment</a></li>
+          <li><a href="stock.html">Stock/Band Options</a></li>
+          <li><a href="sav-plan.html">Savings Plan</a></li>
+          <li><a href="risk.html">Risk & Return Info</a></li>
+        </ul>
+      </div>
+        <div class="footer-col">
+        <h3>About</h3>
+        <ul>
+          <li><a href="elara.html">About Elara Bank</a></li>
+          <li><a href="vision.html">Vision & Mission</a></li>
+          
+        </ul>
+      </div>
+        <div class="footer-col">
+        <h3>Helps</h3>
+        <ul>
+          <li><a href="faqs.html">FAQS</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        
+        </ul>
+      </div>
+       
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="icons">
+        <p><a href="#"><img src="twiter.avif" alt="Twiter"></a> | <a href="#"><img src="face.avif" alt="Facebook"></a> | <a href="#"><img src="intag.avif" alt="Instagram"></a> | <a href="#"><img src="tik.avif" alt="Tiktok"></a> | <a href="#"><img src="what.avif" alt="Whatapp"></a></p>
+      </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy;2025 ELARA BANK. All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

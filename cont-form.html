@@ -8,53 +8,94 @@
   <title>Elara Bank</title>
 </head>
 <style>
-.personal{
-  position: relative;
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+.login-section{
+  background: linear-gradient(to right,#004088,#0066cc);
   height: 100vh;
-  background-image: url(mr.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  padding: 60px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.login-container{
+  background-color: white;
+  max-width: 400px;
+  width: 100%;
   text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.3);
+}
+.login-container h2{
+  color: #004088;
+  margin-bottom: 25px;
+}
+.form-group{
+  margin-bottom: 20px;
+  text-align: left;
+}
+.form-group label{
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+.form-group input{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.form-group input:focus{
+  outline: none;
+  box-shadow: rgba(0, 64, 128, 0.3);
+  color: #004080;
+}
+.login-button{
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   color: white;
+  padding: 20px;
+  background-color: #004080;
+  transition: 0.3s;
 }
-.personal::before{
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.50);
-  z-index: 0;
-  inset: 0;
+.login-button:hover{
+  background-color: #0066cc;
 }
-.per-head{
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
+.forgot-link{
+  margin-top: 12px;
+  display: block;
+  color: #666;
+  font-size: 13px;
+  text-decoration: none;
 }
-.per-head h2{
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 30px;
+.forgot-link:hover{
+  text-decoration: underline;
+  color: #004080;
 }
-.per-head p{
-  font-size: 1.2rem;
-  margin-bottom: 40px;
+.register p{
+  color: #004080;
+  font-size: 13px;
+  margin-top: 10px;
+  display: block;
 }
-@media (max-width: 768px) {
-    .personal h1 {
-        font-size: 2.5rem;
-    }
-
-    .personal p {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 12px 28px;
-        font-size: 1rem;
-    }
+.register-btn{
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 10px;
 }
 </style>
 <body>
@@ -95,7 +136,7 @@
           <li class="submenu-item"><a href="risk.html">Risk & Return Info</a></li>
         </ul>
       </li>
-      
+    
       <li class="menu-item-drop"><a href="about.html" class="menu-link">About</a>
         <ul class="submenu">
           <li class="submenu-item"><a href="elara.html">About ELARA-Banking</a></li>
@@ -112,49 +153,31 @@
       </li>
     </ul>
   </div>
-  <section class="personal">
-    <div class="per-head">
-      <section class="investment-hero">
-  <div class="overlay">
-    <h1>Smart Investment for a Secure Future</h1>
-    <p>Discover tailored investment solutions that grow your wealth while securing tomorrow. Join us and invest with confidence.</p>
+<section class="login-section">
+  <div class="login-container">
+    <h2>Bank Login</h2>
+
+    <form action="# " >
+      <div class="form-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" name="username" required placeholder="Enter your email or username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+      </div>
+
+      <button type="submit" class="login-button">Login</button>
+      <a href="#" class="forgot-link">Forgot password?</a>
+      <div class="register">
+        <p>Don't have an account?</p>
+        <a href="contact.html" class="register-btn">Create Account</a>
+      </div>
+    </form>
   </div>
 </section>
-    </div>
-  </section>
-  <section class="bank-menu">
-  <h2>Our Investment Options</h2>
-  <p>Explore trusted and secure ways to grow your wealth with Elara Bank.</p>
-
-  <div class="bank-box">
-    
-    <a href="real.html" class="bank-info">
-      <img src="reali.jpg" alt="Real Estate Investment">
-      <h3>Real Estate</h3>
-      <p>Invest in property and land with expert-backed long-term returns.</p>
-    </a>
-
-    <a href="stock.html" class="bank-info">
-      <img src="bonds.jpg" alt="Stock and Bonds">
-      <h3>Stocks & Bonds</h3>
-      <p>Trade in trusted stock markets and government bonds for better profits.</p>
-    </a>
-
-    <a href="sav-plan.html" class="bank-info">
-      <img src="sx.jpg" alt="Saving Plans">
-      <h3>Saving Plans</h3>
-      <p>Save smartly for your goals with flexible plans and interest growth.</p>
-    </a>
-
-    <a href="risk.html" class="bank-info">
-      <img src="rikh.jpg" alt="Risk and Return">
-      <h3>Risk & Return</h3>
-      <p>Learn about risk levels and potential returns before you invest.</p>
-    </a>
-
-  </div>
-</section>
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-con">
       <div class="footer-col">
         <h3>Elara Bank</h3>
@@ -227,7 +250,6 @@
       <p>&copy;2025 ELARA BANK. All rights reserved</p>
     </div>
   </footer>
-
 
 </body>
 

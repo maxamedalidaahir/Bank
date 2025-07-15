@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    .form {
+        background: linear-gradient(to right, #004088, #0066cc);
+        height: 100vb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .form-con{
+        background-color: white;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.3);
+    }
+    .form-con h3{
+        color: #004088;
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    .form-group{
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .form-con label{
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 6px;
+        display: block;
+    }
+    .form-con input{
+        padding: 12px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.3);
+        font-size: 13px;
+        transition: box-shadow,0.3s ease;
+    }
+    .form-con input:focus{
+        outline: none;
+        color: #0066cc;
+        box-shadow: rgba(0, 64, 128, 0.3);
+    }
+    .btm{
+        background-color: #004088;
+        color: white;
+        width: 100%;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        transition: 0.3s ease;
+    }
+    .btm:hover{
+        background-color: #0066cc;
+    }
+    .forgot{
+        display: block;
+        color: #555;
+        margin-top: 20px;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    .forgot:hover{
+        color: #004088;
+        text-decoration: underline;
+    }
+    p{
+        color: #0066cc;
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 200;
+    }
+    .create{
+        color: #555;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+        margin-top: 8px;
+    }
+    .create:hover{
+        color: #004088;
+        text-decoration: underline;
+    }
+
+</style>
+
+<body>
+    <section class="form">
+        <div class="form-con">
+            <h3>Registration Form</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name" id="name">Username or Email</label>
+                    <input type="text" name="name" id="name" required placeholder="Enter your Email or username">
+                </div>
+                <div class="form-group">
+                    <label for="email" id="passwor"> Password</label>
+                    <input type="password" name="password" id="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btm">Login</button>
+                <a href="#" class="forgot">Forgot password</a>
+                <p>Donn`t have an account?</p>
+                <a href="#" class="create">Create Account.</a>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
